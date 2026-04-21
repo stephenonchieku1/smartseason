@@ -71,4 +71,26 @@ To get the entire system running instantly with one command:
 - The lifecycle is strictly forward: Planted → Growing → Ready → Harvested.
 
 # smartseason
-# smartseason
+# Admin Dashboard ui/ux flow
+---
+<img width="955" height="411" alt="image" src="https://github.com/user-attachments/assets/6c80a724-2853-4e8f-8c41-58a1635ef627" />
+<br>
+<img width="957" height="415" alt="image" src="https://github.com/user-attachments/assets/9bc4bfff-4f92-47e0-8213-ec87e48f0443" />
+<br>
+<img width="959" height="411" alt="image" src="https://github.com/user-attachments/assets/bcb01a88-c690-45f4-961c-b2326ee2ed9b" />
+<br>
+
+# Agent Dashboard ui/ux flow
+---
+<img width="958" height="410" alt="image" src="https://github.com/user-attachments/assets/a5f7cd1e-0579-4a10-8056-50deae1bd76e" />
+<br>
+<img width="955" height="412" alt="image" src="https://github.com/user-attachments/assets/ca301d52-6e9c-485c-9704-ce3a1c905d05" />
+<br>
+<img width="953" height="410" alt="image" src="https://github.com/user-attachments/assets/a94eb5cb-791e-4c43-a719-67b23b901621" />
+<br>
+<img width="949" height="406" alt="image" src="https://github.com/user-attachments/assets/71e751a7-2ba7-4cd1-95dd-f9376b1700ea" />
+<br>
+<img width="959" height="419" alt="image" src="https://github.com/user-attachments/assets/d9fcb21c-e62f-4164-aa76-4f04bce0fe33" />
+
+---
+
