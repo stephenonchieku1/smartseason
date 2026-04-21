@@ -1,0 +1,17 @@
+{
+  "name": "smartseason",
+  "version": "1.0.0",
+  "description": "SmartSeason Field Monitoring System - Unified Runner",
+  "main": "index.js",
+  "scripts": {
+    "setup": "bun run setup:backend && bun run setup:frontend && bun run setup:db",
+    "setup:backend": "cd smartseason-backend && bun install",
+    "setup:frontend": "cd smartseason-frontend && bun install",
+    "setup:db": "cd smartseason-backend && bunx prisma generate && bunx prisma migrate dev --name init && node seed.js",
+    "dev": "concurrently \"cd smartseason-backend && bun run dev\" \"cd smartseason-frontend && bun run dev\"",
+    "clean": "rm -rf smartseason-backend/node_modules smartseason-frontend/node_modules"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

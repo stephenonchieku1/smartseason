@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      String   @default("agent")
+  fields    Field[]
+  updates   FieldUpdate[]
+  createdAt DateTime @default(now())
+}
+
+model Field {
+  id            String   @id @default(uuid())
+  name          String
+  cropType      String
+  plantingDate  DateTime
+  currentStage  String   @default("PLANTED")
+  agent         User     @relation(fields: [agentId], references: [id])
+  agentId       String
+  updates       FieldUpdate[]
+  createdAt     DateTime @default(now())
+}
+
+model FieldUpdate {
+  id        String   @id @default(uuid())
+  field     Field    @relation(fields: [fieldId], references: [id])
+  fieldId   String
+  agent     User     @relation(fields: [agentId], references: [id])
+  agentId   String
+  stage     String
+  notes     String?
+  createdAt DateTime @default(now())
+}
